@@ -1,0 +1,23 @@
+<h2>login page</h2>
+    <div id="form">
+        <form action="/auth/login" method="POST">
+            <label>Username</label>
+            <input type="text" name="name" placeholder="Your name">
+            <br>
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Your password">
+            <br>
+            <label>email</label>
+            <input type="text" name="email" placeholder="Your email">
+            <br>
+            <label>age</label>
+            <input type="number" name="age" placeholder="Your age">
+            <br>
+            {{#if error}}
+            <p style="color:rgb(218,90,90">{{error}}</p>
+            {{/if}}
+            
+            <button type="submit">Let's go!</button>
+        </form>
+        <a href="/">Home</a>
+    </div>
