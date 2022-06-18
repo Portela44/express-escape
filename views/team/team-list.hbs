@@ -1,0 +1,9 @@
+<h2>team list</h2>
+<ul>
+    {{#each teams}}
+    <li><a href="/team/{{_id}}">{{name}}</a></li>
+    {{/each}}
+</ul>
+
+
+<a href="/team/create">Create new team</a>
